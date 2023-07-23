@@ -1,0 +1,22 @@
+.header-icon {
+    height: 45px;
+}
+
+.undecorated {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.separator {
+    height: 25px;
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+    #topNav {
+        display: none
+    }
+}

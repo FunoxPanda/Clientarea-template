@@ -1,0 +1,153 @@
+body {
+    background-color: #1f2a38;
+    color: #b2bcd8;
+    height: 100vh;
+}
+
+
+.gradient-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-banner::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(35, 76, 222, .8), rgba(35, 76, 222, .75)), url('../images/background_footer.webp') no-repeat;
+    background-size: cover
+}
+
+
+section:before {
+    background-size: cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-header-buttons {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 0;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+.pagetitle {
+    text-transform: uppercase;
+    padding-top: 2rem;
+    font-weight: 550;
+    letter-spacing: .05em;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-v-menu {
+    min-width: 17em;
+    max-width: 17em;
+    height: 100%;
+    transform: translateY(-7.25em);
+    border-radius: 15px;
+    bottom: 0;
+    top: 70px;
+    z-index: 1;
+    margin-top: 0;
+    background: #273447;
+}
+
+.offcanvas-menu {
+    background: #273447;
+}
+
+.offcanvas-header {
+    padding-top: 4em;
+}
+
+.sidebar-title {
+    font-weight: 650;
+    text-transform: uppercase;
+    color: #8e97ad;
+    letter-spacing: .05em;
+    font-size: 11px;
+    padding: 15px 20px 5px 20px;
+    display: inline-block;
+}
+
+
+.sidebar-article {
+    color: #8e97ad;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.sidebar-article .fa {
+    padding-left: 5rem!important;
+}
+
+.sidebar-article:hover {
+    background-color: rgba(59, 93, 231, 0.05);
+    color: rgba(71, 108, 242, 0.8);
+}
+
+.activated {
+    background-color: rgba(59, 93, 231, 0.05);
+    color: rgba(71, 108, 242, 0.8);
+    border-left: 2px solid rgb(71, 108, 242);
+}
+
+.sidebar-text {
+    color: #b2bcd8;
+}
+
+.bg-darkness {
+    background: #273447;
+}
+
+.no-license hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.active {
+    background-color: rgba(71, 108, 242, 0.3);
+    border-color: rgba(71, 108, 242, 0.3);
+
+}
+
+@media (min-width: 1200px) {
+    .ps-sidebar-4 {
+        padding-left: 1rem !important;
+        display: grid;
+        grid-template-columns: max-content auto;
+    }
+
+    .middle {
+        padding-left: 18em;
+    }
+}
+
+@media (max-width: 1200px) {
+    /*.sidebar-v-menu {
+        display: none;
+    }*/
+
+    .ps-sidebar-4 {
+        padding-left: 0 !important;
+        display: grid;
+    }
+
+    .sidebar-v-menu {
+        display: none;
+    }
+    
+    .middle {
+        padding-left: 2em;
+    }
+}
